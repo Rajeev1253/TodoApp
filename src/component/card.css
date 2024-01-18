@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-box{
+    display: flex;
+    width:300px;
+    height:80px;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgb(175, 126, 233);
+    color: rgb(151, 157, 168);
+    justify-content: space-between;
+   
+}
+.text{
+padding: 31px;
+}
+
+.sideIcon{
+    display: flex;
+    align-items: center;
+
+}
+.checkBox{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}

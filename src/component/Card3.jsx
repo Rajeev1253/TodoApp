@@ -1,22 +1,24 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './card.css'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const Card = (props) => {
-const [checked, setChecked] = useState([]);
  
- 
+  const handleChange = () => {
+    props.setCheck(!props.checked)
+  }
+  
   return (
     <div className="card-box">
     <div className="checkBox">
-  <input type="checkbox" class="todo-checkbox" onChange={handleChange}/>
+  <input type="checkbox" class="todo-checkbox" checked={props.checked} onChange={handleChange}/>
 </div>
 
     <div className='text'>
     
-    <p>{props.message}</p>
+    <span style={{textDecoration:props.checked?"line-through":"none"}}>{props.message}</span>
 
     </div>
     <div className='sideIcon'>

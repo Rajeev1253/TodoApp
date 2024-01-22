@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.todo-list{
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+}
+.checkbox{
+    width: 22px;
+    height: 22px;
+    margin-left:5px;
+    
+}
+.todo-list>li{
+ 
+    color:grey;
+    text-align: center;
+    padding-left: 20px;
+}
+.btns{
+    color: grey;
+}
